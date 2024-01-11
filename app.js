@@ -40,8 +40,9 @@ function userFlash(btn){
 
 function levelUp(){
     userseq=[];
-    level++;
     document.querySelector("h3").innerText = `level ${level}`
+    level++;
+   
     let randomNum = Math.floor(Math.random()*3);
     let randomcolor= btnarr[randomNum];
     gameseq.push(randomcolor)
