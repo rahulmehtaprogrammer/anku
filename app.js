@@ -42,7 +42,7 @@ function levelUp(){
     userseq=[];
     document.querySelector("h3").innerText = `level ${level}`
     level++;
-   
+    
     let randomNum = Math.floor(Math.random()*3);
     let randomcolor= btnarr[randomNum];
     gameseq.push(randomcolor)
@@ -61,7 +61,7 @@ function seqMatch(idx){
             levelUp()
         }
     }else{
-        document.querySelector("h3").innerHTML= `Game Over ! <b> you are in  level  ${level}</b><br> click on start button to restart the game`;
+        document.querySelector("h3").innerHTML= `Game Over ! <b> your are in  level ${level}</b><br> click on start button to restart the game`;
         document.querySelector("body").style.backgroundColor="red";
         setTimeout(() => {
             document.querySelector("body").style.backgroundColor="white";
