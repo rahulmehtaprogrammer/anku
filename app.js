@@ -67,7 +67,7 @@ function seqMatch(idx){
         }, 100);
         High()
         reset();
-        highcore();
+        
         
         }
 
