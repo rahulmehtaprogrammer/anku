@@ -8,7 +8,7 @@ let started= false;
 let level = 0;
 let highs= 0;
 
-document.querySelector(".name").innerText= `Welcome ${Ename}`;
+document.querySelector(".name").innerText= `welcome ${Ename}`;
 
 
 
@@ -17,6 +17,7 @@ document.querySelector(".name").innerText= `Welcome ${Ename}`;
 document.addEventListener("click" ,function(){
         if(started==false){
             started = true;
+         document.querySelector(".name").innerText= ` ${Ename}`;
             levelUp();
         }
        
