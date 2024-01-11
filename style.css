@@ -34,6 +34,15 @@ body{
 .bggreen{
     background-color: rgb(70, 255, 150);
 }
+.start{
+    width: 100px;
+    height: 50px;
+    color: black;
+    background-color: rgb(122, 246, 192);
+    border: 2px solid black;
+    border-radius: 5px;
+    margin-top: 50px;
+}
 @media  (max-width:600px) {
     .btn{
         height: 100px;
