@@ -61,7 +61,7 @@ function seqMatch(idx){
             levelUp()
         }
     }else{
-        document.querySelector("h3").innerHTML= `Game Over ! <b> your level ${level}</b><br> click on start button to restart game`;
+        document.querySelector("h3").innerHTML= `Game Over ! <b> you are in  level  ${level}</b><br> click on start button to restart the game`;
         document.querySelector("body").style.backgroundColor="red";
         setTimeout(() => {
             document.querySelector("body").style.backgroundColor="white";
