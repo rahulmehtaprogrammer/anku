@@ -1,4 +1,4 @@
-let Ename = prompt("Enter your Name")
+let Ename = prompt("Enter your name")
 let gameseq =[];
 let userseq =[];
 let btnarr =["yellow","red","green","purple"]
@@ -8,16 +8,16 @@ let started= false;
 let level = 0;
 let highs= 0;
 
-document.querySelector(".name").innerText= `welcome ${Ename}`;
+
+let button = document.querySelector(".start");
+
+document.querySelector("h4").innerText=`welcome ${Ename}`;
 
 
-
-
-
-document.addEventListener("click" ,function(){
+button.addEventListener("click" ,function(){
         if(started==false){
             started = true;
-         document.querySelector(".name").innerText= ` ${Ename}`;
+            document.querySelector("h4").innerText=`${Ename}`;
             levelUp();
         }
        
@@ -60,7 +60,7 @@ function seqMatch(idx){
             levelUp()
         }
     }else{
-        document.querySelector("h3").innerHTML= `Game Over ! <b> your level ${level}</b><br> Touch on screen for restart game`;
+        document.querySelector("h3").innerHTML= `Game Over ! <b> your level ${level}</b><br> click on start button to restart game`;
         document.querySelector("body").style.backgroundColor="red";
         setTimeout(() => {
             document.querySelector("body").style.backgroundColor="white";
